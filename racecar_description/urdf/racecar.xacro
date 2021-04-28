@@ -192,7 +192,7 @@
   </xacro:VLP-16>
 
   <xacro:property name="path_meshes" value="$(find zed_wrapper)/urdf/models"/>
-  <xacro:include filename="$(find zed_wrapper)/urdf/zed.urdf.xacro" /> 
+  <xacro:include filename="$(find racecar_description)/urdf/zed.urdf.xacro" /> 
   <xacro:zed camera_name="zed" parent="base_link" camera_model="zed2">
     <origin xyz="0.340 0 0.105" rpy="0 0 0" />
   </xacro:zed>
@@ -231,7 +231,7 @@
 
   <!-- Add the remaining xacros -->
 
-  <xacro:include filename="$(find racecar_description)/urdf/racecar.gazebo" />
+  <xacro:include filename="racecar.gazebo" />
   <xacro:include filename="$(find racecar_description)/urdf/materials.xacro" />
 
 </robot>
